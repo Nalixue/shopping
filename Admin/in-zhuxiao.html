@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>普管后台</title> 
+    <link rel="stylesheet" href="../Public/css/admins/admin.css">
+    <script type="text/javascript" src="../Public/js/src/jquery.1.4.2-min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i>Watch</i>
+            for you
+        </div>
+        <div class="user">
+            <a href="" id="user">
+                admin <b></b>
+            </a>
+            <ul>
+                <li>
+                    <a href="#" id="changePw">修改密码</a>
+                </li>
+                <li>
+                    <a href="#">退出登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content clearfix">
+        <div class="main">
+            <div class="main-wrap" id="mainWrap">
+                <div class="title">
+                    <span>申请注销</span>
+                </div>
+                <a href="#" class="add" id="add-class">添加商品类别</a> 
+                <table class="tableDetail" id="tableDetail">
+                    <tr>
+                        <th>品牌id</th>
+                        <th>品牌名</th>
+                        <th>修改</th>
+                        <th>删除</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <a href="laolishi.html">劳力士</a>
+                        </td>
+                        <td>
+                            <a href="#" id="mod">修改</a>
+                        </td>
+                        <td>
+                            <a href="#" class="del">删除</a>
+                        </td>
+                    </tr>
+                    <div class="page">
+                        当前第1页/共10页
+                            <a href="__URL__/mod/pageNow/{$pageNow+1}">下一页</a>
+                            <a href="__URL__/mod/pageNow/{$pageCount}">尾页</a>
+                    </div>
+                </table>
+            </div>
+           <div class="pop-level" id="class-detail"></div>
+            <form action="" method="post" name="addnoticeFrm" class="fr-add" id="fr-add">
+                    <div class="pop-tit">
+                        添加商品类别  
+                        <a href="#" class="icon icon-cross del-pop" id="del-add"></a> 
+                    </div>
+                    <p>
+                        <label for="add-name">商品名</label>
+                        <input type="text" name="name" id="add-name">
+                    </p>
+                    <p>
+                        <label for="add-father"类别></label>
+                        <select name="st-goods" id="add-father">
+                            <option value="父类1">父类1</option>
+                            <option value="父类1">父类2</option>
+                        </select>
+                    </P>
+                    <input type="submit" value="添加" class="sub-btn">
+                </form>
+        <div class="pop-level" id="class-mod"></div>
+        <form action="" method="post" name="addnoticeFrm" class="fr-add" id="fr-mod">
+               
+                    <div class="pop-tit">
+                        类别详情
+                        <a href="#" class="icon icon-cross del-pop" id="del-mod"></a>
+                    </div>
+                    <p>
+                        <label for="name">商品名</label>
+                        <input type="text" name="name" id="aname">
+                    </p>
+                    <p>
+                        <label for="father"类别></label>
+                        <select name="st-goods" id="father">
+                            <option value="父类1">父类1</option>
+                            <option value="父类1">父类2</option>
+                        </select>
+                    </P>
+                    <input type="submit" value="修改" class="sub-btn">    
+            </form>
+    </div>
+    <div class="aside" id="aside">
+        <ul>
+            <li class="list"><a href="#"> 
+                    首页
+                </a></li>
+               <li class="list">
+                <a href="index.html"> <i class="icon icon-home3"></i>
+                    管理首页
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-xinxi.html">
+                    <i class="icon icon-users"></i>
+                    个人信息
+                </a>
+            </li>
+            <li class="list">
+                <a href="shangpin.html">
+                    <i class=" icon icon-bubble"></i>
+                    商品管理
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-maijia.html">
+                    <i class="icon icon-address-book"></i>
+                    卖家管理
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-maijia2.html">
+                    <i class="icon icon-address-book"></i>
+                    买家管理
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-dindan.html">
+                    <i class="icon icon-display"></i>
+                    订单管理
+                </a>
+            </li>
+            <li class="list">
+               <a href="in-zhuxiao.html">
+                    <i class="icon icon-display"></i>
+                    申请注销
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-gongzuo.html"> <i class="icon icon-profile"></i>
+                    工作日志
+                </a>
+            </li>
+            <li class="list">
+                <a href="in-tousu.html">
+                    <i class=" icon icon-bubble"></i>
+                   投诉信息
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="../Public/js/admins/ad-main.js"></script>
+</body>
+</html>

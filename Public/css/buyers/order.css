@@ -1,0 +1,136 @@
+/*#FF4400*/
+
+::selection {
+    background-color: #FF5A00;
+}
+.main {
+	float: left;
+	width: 100%;
+    color: #3c3c3c;
+}
+.main-wrap {
+	margin-left: 180px;
+}
+.as-nav {
+	float: left;
+	margin-left: -100%
+}
+.crumbs a:hover {
+    color: #C60000;
+}
+.crumbs {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+.crumbs a {
+    color: #666;
+}
+.crumbs li {
+	float: left;
+}
+.as-nav a {
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;		
+	font-weight: 500;
+	border-left: 10px solid #f0f0f0;
+	border-bottom: 1px solid #dcdcdc;
+	background-color: #f0f0f0;
+	color: #3c3c3c;
+}
+.as-nav .cur-page {
+    border-left: 10px solid #ff5a00;
+}
+.as-nav a:hover {
+	background-color: #ff5a00;
+	color: #fff;
+}
+
+
+.car-detail > li {
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: 12px;
+	border: 1px solid #dcdcdc;
+	background-color: #fcfcfc;
+	color: #666;
+}
+.list-tit li {
+    float: left;
+}
+.buy-num {
+	display: inline-block;
+	width: 150px;
+}
+.buy-whe {
+    width: 15px;
+    margin-right: 20px;
+}
+.car-g-de {
+	display: inline-block;
+	width: 250px;
+}
+.per-price {
+	margin: 0 30px 0 20px;
+}
+.all-price {
+	display: inline-block;
+	width: 65px;
+	margin-left: 20px;
+	font-weight: 600;
+	color: #c60000;
+}
+.car-del {
+    margin-left: 30px;
+}
+.car-del:hover {
+	text-decoration: underline;
+	color: #c60000;
+}
+.list-detail li{
+    float: left;
+}
+.main-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    /*table-layout: fixed;*/
+    font-size: 13px;
+}
+table th {
+    padding: 10px 0;
+    background-color: #eaf8ff;
+}
+table td {
+    text-align: center;
+    padding: 10px 5px;
+    border: 1px solid #AFD9FF;
+}
+tr {
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+table a {
+    color: #3c3c3c;
+}
+article a:hover {
+    color: #ff5a00;
+}
+.sep-row {
+    height: 15px;
+}
+.shop {
+    display: inline-block;
+    padding: 10px 5px;
+    width: 300px;
+}
+.detail-sh {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+.all {
+    font-weight: 600;
+}

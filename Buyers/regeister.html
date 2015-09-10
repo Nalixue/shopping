@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../Public/css/buyers/global.css">
+    <link rel="stylesheet" href="../Public/css/buyers/register.css">
+    <script src="../Public/js/src/jquery.1.4.2-min.js"></script>
+    <script src="../Public/js/src/html5.js"></script>
+    <script src="../Public/js/src/selectvizr.js"></script>
+</head>
+<body>
+    <header class="user-msg">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="login" id="login">登录</a>
+                </li>
+                <li>
+                    <a href="#">
+                        我的购物车(
+                        <span>0</span>
+                        )
+                    </a>
+                </li>
+                <li class="place">
+                    <a href="#">
+                        配送至
+                        <span id="ture-local">大连</span>
+                    </a>
+                    <div class="all-place">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">北京</a>
+                            </li>
+                            <li>
+                                <a href="#">上海</a>
+                            </li>
+                            <li>
+                                <a href="#">天津</a>
+                            </li>
+                            <li>
+                                <a href="#">重庆</a>
+                            </li>
+                            <li>
+                                <a href="#">河北</a>
+                            </li>
+                            <li>
+                                <a href="#">山西</a>
+                            </li>
+                            <li>
+                                <a href="#">河南</a>
+                            </li>
+                            <li>
+                                <a href="#">辽宁</a>
+                            </li>
+                            <li>
+                                <a href="#">吉林</a>
+                            </li>
+                            <li>
+                                <a href="#">黑龙江</a>
+                            </li>
+                            <li>
+                                <a href="#">甘肃</a>
+                            </li>
+                            <li>
+                                <a href="#">江苏</a>
+                            </li>
+                            <li>
+                                <a href="#">山东</a>
+                            </li>
+                            <li>
+                                <a href="#">安徽</a>
+                            </li>
+                            <li>
+                                <a href="#">浙江</a>
+                            </li>
+                            <li>
+                                <a href="#">福建</a>
+                            </li>
+                            <li>
+                                <a href="#">湖北</a>
+                            </li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#">湖南</a>
+                            </li>
+                            <li>
+                                <a href="#">广东</a>
+                            </li>
+                            <li>
+                                <a href="#">广西</a>
+                            </li>
+                            <li>
+                                <a href="#">江西</a>
+                            </li>
+                            <li>
+                                <a href="#">四川</a>
+                            </li>
+                            <li>
+                                <a href="#">海南</a>
+                            </li>
+                            <li>
+                                <a href="#">贵州</a>
+                            </li>
+                            <li>
+                                <a href="#">云南</a>
+                            </li>
+                            <li>
+                                <a href="#">西藏</a>
+                            </li>
+                            <li>
+                                <a href="#">内蒙古</a>
+                            </li>
+                            <li>
+                                <a href="#">陕西</a>
+                            </li>
+                            <li>
+                                <a href="#">青海</a>
+                            </li>
+                            <li>
+                                <a href="#">宁夏</a>
+                            </li>
+                            <li>
+                                <a href="#">新疆</a>
+                            </li>
+                            <li>
+                                <a href="#">台湾</a>
+                            </li>
+                            <li>
+                                <a href="#">香港</a>
+                            </li>
+                            <li>
+                                <a href="#">澳门</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <form action="" type="post" id="form-sear">
+                <input type="search" placeholder="搜索" id="search"></form>
+        </nav>
+    </header>
+    <article class="clearfix">
+        <nav class="sort clearfix">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">卡西欧（CASIO）</a>
+                </li>
+                <li>
+                    <a href="#">天梭（TISSOT）</a>
+                </li>
+                <li>
+                    <a href="#">浪琴（LONGINES）</a>
+                </li>
+                <li>
+                    <a href="#">劳力士（ROLEX）</a>
+                </li>
+                <li id="more">
+                    <a href="#">更多>></a>
+                </li>
+                <li> <i class="tran"></i>
+                    <a href="index.html" class="logo"></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="reg-detail">
+            <h2>注册</h2>
+            <form action="" class="msg-reg">
+                <h4>客户档案</h4>
+                <p>
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username" maxlength="6" minlength="3" required></p>
+                <p>
+                    <label for="password">密码</label>
+                    <input type="password" name="password" maxlength="16" minlength="6" id="password" required></p>
+                <p>
+                    <label for="sure-pd">确认密码</label>
+                    <input type="password" name="sure-pd" maxlength="16" minlength="6" id="sure-pd" required></p>
+                <p>
+                    <label for="mail">邮箱</label>
+                    <input type="email" name="mail" id="mail" required></p>
+                <p>
+                    <label for="sex">性别</label>
+                    <input type="radio" name="sex" id="man">男
+                    <input type="radio" name="sex" id="woman">女
+                </p>
+                <p>
+                    <label for="birth">生日</label>
+                    <input type="date" id="birth" required></p>
+                <p>
+                    <label for="tel">电话</label>
+                    <input type="tel" id="tel" required></p>
+                <p>
+                    <button id="sub-lg" class="sub-lg">注册</button>
+                </p>
+            </form>
+        </section>
+        <aside class="reg-intro">
+            <hgroup>
+                <h4>用户专区 - 为什么注册成为 LUISAVIAROMA.COM 用户？</h4>
+                <h5>我的账户:</h5>
+                <p>LUISAVIAROMA.COM为使您下次购物更加快捷，保留您的账户信息，您的购物过程将更加顺畅和轻松</p>
+                <h5>我的订单:</h5>
+                <p>记录您的订单，更改现时订单状态并接受更新</p>
+                <h5>我的用户档案:</h5>
+                <p>编辑您的个人信息及方便地在线更新您的账户</p>
+                <h5>换货申请:</h5>
+                <p>浏览您的退货历史记录及换货申请</p>
+            </hgroup>
+        </aside>
+    </article>
+    <footer>
+        <div class="contact-us">
+            <ul>
+                <li>关于我们</li>
+                <li>联系我们</li>
+                <li>给予反馈</li>
+                <li>隐私权声明</li>
+                <li>合作方案</li>
+            </ul>
+            <ul>
+                <li>facebook</li>
+                <li>sinaweibo</li>
+                <li>twitter</li>
+                <li>tecentweibo</li>
+                <li>qq</li>
+            </ul>
+        </div>
+        <p>&copy; 2004-2015 COMPUTERSHOPPING.COM</p>
+    </footer>
+    <script src="../Public/js/buyers/main.js"></script>
+</body>
+</html>

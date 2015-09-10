@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../Public/css/buyers/global.css">
+    <link rel="stylesheet" href="../Public/css/buyers/order.css">
+    <script src="../Public/js/src/jquery.1.4.2-min.js"></script>
+    <script src="../Public/js/src/html5.js"></script>
+    <script src="../Public/js/src/selectvizr.js"></script>
+</head>
+<body>
+    <header class="user-msg">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="login" id="login">登录</a>
+                </li>
+                <li>
+                    <a href="#">
+                        我的购物车(
+                        <span>0</span>
+                        )
+                    </a>
+                </li>
+                <li class="place">
+                    <a href="#">
+                        配送至
+                        <span id="ture-local">大连</span>
+                    </a>
+                    <div class="all-place">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" class="local">北京</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">上海</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">天津</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">重庆</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">河北</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">山西</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">河南</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">辽宁</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">吉林</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">黑龙江</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">甘肃</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">江苏</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">山东</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">安徽</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">浙江</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">福建</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">湖北</a>
+                            </li>
+                        </ul>
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" class="local">湖南</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">广东</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">广西</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">江西</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">四川</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">海南</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">贵州</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">云南</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">西藏</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">内蒙古</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">陕西</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">青海</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">宁夏</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">新疆</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">台湾</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">香港</a>
+                            </li>
+                            <li>
+                                <a href="#" class="local">澳门</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <form action="" type="post" id="form-sear">
+                <input type="search" placeholder="搜索" id="search"></form>
+        </nav>
+    </header>
+    <article>
+        <nav class="sort clearfix">
+            <ul>
+                <li>
+                    <a href="#">卡西欧（CASIO）</a>
+                </li>
+                <li>
+                    <a href="#">天梭（TISSOT）</a>
+                </li>
+                <li>
+                    <a href="#">浪琴（LONGINES）</a>
+                </li>
+                <li>
+                    <a href="#">劳力士（ROLEX）</a>
+                </li>
+                <li id="more">
+                    <a href="#">更多>></a>
+                </li>
+                <li> <i class="tran"></i>
+                    <a href="index.html" class="logo"></a>
+                </li>
+            </ul>
+        </nav>
+        <section class="clearfix">
+            <ul class="clearfix crumbs">
+                <li>
+                    <a href="#">手表</a>
+                    >
+                </li>
+                <li>
+                    <a href="#">劳力士</a>
+                    >
+                </li>
+                <li>
+                    <a href="#">商品名</a>
+                    >
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+            </ul>
+            <section class="main">
+                <div class="main-wrap">
+                    <table>
+                      <tr>
+                          <th>宝贝</th>
+                          <th>单价(元)</th>
+                          <th>数量</th>
+                          <th>商品操作</th>
+                          <th>实付款</th>
+                          <th>交易操作</th>
+                      </tr>
+                      <tr>
+                          <td class="shop">
+                              <a href="#">
+                                  <img src="l.jpg" width="64px" height="64px"></a>
+                              <a href="#" class="detail-sh">商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                          </td>
+                          <td>200.00</td>
+                          <td>3</td>
+                          <td>
+                              <a href="#">退款</a>
+                          </td>
+                          <td class="all">600.00</td>
+                          <td>
+                              <a href="">立即付款</a>
+                          </td>
+                      </tr>
+                      <tr class="sep-row"></tr>
+                      <tr>
+                          <td class="shop">
+                              <a href="#">
+                                  <img src="l.jpg" width="64px" height="64px"></a>
+                              <a href="#" class="detail-sh">商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                          </td>
+                          <td>200.00</td>
+                          <td>3</td>
+                          <td>
+                              <a href="#">退款</a>
+                          </td>
+                          <td class="all">600.00</td>
+                          <td>
+                              <a href="">立即付款</a>
+                          </td>
+                      </tr>
+                  </table>
+                </div>
+            </section>
+            <aside class="as-nav">
+                <ul>
+                    <li>
+                        <a href="index.html"> <i class="icon icon-home3"></i>
+                            全部订单
+                        </a>
+                    </li>
+                    <li>
+                        <a href="in-xinxi.html" class="cur-page">
+                            <i class="icon icon-users"></i>
+                            待付款
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shangpin.html">
+                            <i class=" icon icon-bubble"></i>
+                            待发货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="in-maijia.html">
+                            <i class="icon icon-address-book"></i>
+                            待收货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="in-maijia2.html">
+                            <i class="icon icon-address-book"></i>
+                            待评价
+                        </a>
+                    </li>
+                    <li>
+                        <a href="in-dindan.html">
+                            <i class="icon icon-display"></i>
+                            退款
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!--form action="" class="car-detail">
+            <ul>
+                <li>
+                    <input type="checkbox" name="buy-whe" class="buy-whe">
+                    <img src="l.jpg" width="64px" height="64px">
+                    <span class="car-g-de">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</span>
+                    <span class="per-price">600.00</span>
+                    <div class="buy-num">
+                        <a href="#" class="reduce-num">-</a>
+                        <input type="text" value="1" name="buy-num" class="tr-num">
+                        <a href="#" class="add-num">+</a>
+                    </div>
+                    <span>
+                        <a href="#" class="car-del">删除</a>
+                    </span>
+                </li>
+                <li>
+                    <input type="checkbox" name="buy-whe" class="buy-whe">
+                    <img src="l.jpg" width="64px" height="64px">
+                    <span class="car-g-de">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</span>
+                    <span class="per-price">100.00</span>
+                    <div class="buy-num">
+                        <a href="#" class="reduce-num">-</a>
+                        <input type="text" value="1" name="buy-num" class="tr-num">
+                        <a href="#" class="add-num">+</a>
+                    </div>
+                    <span class="all-price">500.00</span>
+                    <span>
+                        <a href="#" class="car-del">删除</a>
+                    </span>
+                </li>
+                <li>
+                    <input type="checkbox" name="buy-whe" class="buy-whe">
+                    <img src="l.jpg" width="64px" height="64px">
+                    <span class="car-g-de">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</span>
+                    <span class="per-price">300.00</span>
+                    <div class="buy-num">
+                        <a href="#" class="reduce-num">-</a>
+                        <input type="text" value="1" name="buy-num" class="tr-num">
+                        <a href="#" class="add-num">+</a>
+                    </div>
+                    <span class="all-price">900.00</span>
+                    <span>
+                        <a href="#" class="car-del">删除</a>
+                    </span>
+                </li>
+            </ul>
+            <div class="car-all">
+                <span>
+                    总计： <strong id="all-price">￥0.00</strong>
+                </span>
+                <input type="submit" value="购买" id="btn-submit"></div>
+        </form -->
+    </section>
+</article>
+<footer>
+    <div class="contact-us">
+        <ul>
+            <li>关于我们</li>
+            <li>联系我们</li>
+            <li>给予反馈</li>
+            <li>隐私权声明</li>
+            <li>合作方案</li>
+        </ul>
+        <ul>
+            <li>facebook</li>
+            <li>sinaweibo</li>
+            <li>twitter</li>
+            <li>tecentweibo</li>
+            <li>qq</li>
+        </ul>
+    </div>
+    <p>&copy; 2004-2015 COMPUTERSHOPPING.COM</p>
+</footer>
+<script src="../Public/js/buyers/main.js"></script>
+</body>
+</html>

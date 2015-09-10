@@ -2,12 +2,12 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="./Public/css/buyers/global.css">
-    <link rel="stylesheet" href="./Public/css/buyers/index.css">
-    <script src="./Public/js/src/jquery.1.4.2-min.js"></script>
-    <script src="./Public/js/src/html5.js"></script>
-    <script src="./Public/js/src/selectvizr.js"></script>
+    <title>详情</title>
+    <link rel="stylesheet" href="../Public/css/buyers/global.css">
+    <link rel="stylesheet" href="../Public/css/buyers/detail.css">
+    <script src="../Public/js/src/jquery.1.4.2-min.js"></script>
+    <script src="../Public/js/src/html5.js"></script>
+    <script src="../Public/js/src/selectvizr.js"></script>
 </head>
 <body>
     <header class="user-msg">
@@ -144,100 +144,85 @@
     </header>
     <article>
         <nav class="sort clearfix">
-            <ul class="clearfix">
+            <ul>
                 <li>
-                    <a href="./Buyers/sort.html">卡西欧（CASIO）</a>
+                    <a href="#">卡西欧（CASIO）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">天梭（TISSOT）</a>
+                    <a href="#">天梭（TISSOT）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">浪琴（LONGINES）</a>
+                    <a href="#">浪琴（LONGINES）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">劳力士（ROLEX）</a>
+                    <a href="#">劳力士（ROLEX）</a>
                 </li>
-                <li class="triangle"> 
-                    <i class="tran"></i>
-                    <i class="rotate tran"></i>
+                <li> <i class="tran"></i>
                     <a href="index.html" class="logo"></a>
                 </li>
             </ul>
         </nav>
-        <section class="carousel" id="containt">
-            <div id="img" class="img" style="left: 0px">
-                <img src="./Public/images/buyers/c2.jpg" alt="1" />
-                <img src="./Public/images/buyers/c1.jpg" alt="2" />
-                <img src="./Public/images/buyers/c3.jpg" alt="3" />
-                <img src="./Public/images/buyers/c4.jpg" alt="3" />
-                <img src="./Public/images/buyers/c5.jpg" alt="3" />
-            </div>
-            <span id="prev" class="prev">&lt;</span>
-            <span id="next" class="next">&gt;</span>
-            <div id="btn" class="btn">
-                <span class="button">1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
+        <section class="clearfix">
+            <ul class="clearfix crumbs">
+                <li><a href="./index.html">手表</a> > </li>
+                <li><a href="./sort.html">劳力士</a> > </li>
+                <li><a href="./detail.html">商品名</a></li>
+            </ul>
+            <aside class="goods-show">
+                <img src="../Public/images/buyers/z4.jpg" alt="手表图片" width="350px" height="350px" id="par-img">
+                <ul class="clearfix" id="child-img">
+                    <li><img src="../Public/images/buyers/z4.jpg" alt="手表细节" width="54px" height="54px"></li>
+                    <li><img src="../Public/images/buyers/d-2.jpg" alt="手表细节" width="54px" height="54px"></li>
+                    <li><img src="../Public/images/buyers/d-3.jpg" alt="手表细节" width="54px" height="54px"></li>
+                    <li><img src="../Public/images/buyers/d-4.jpg" alt="手表细节" width="54px" height="54px"></li>
+                    <li><img src="../Public/images/buyers/d-5.jpg" alt="手表细节" width="54px" height="54px"></li>
+                </ul>
+            </aside>
+            <div class="goods-intro">
+            <form action="">
+                <h2>天王表(TIANWANG)手表 皮带石英情侣表男表棕色GS3612GG</h2>
+                <p class="clearfix">
+                    <label>商品描述：</label>
+                    <span class="shop-des">这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述这里是商品描述
+                    </span>
+                </p>
+                <p class="price">
+                    <label for="send-addr">价格：</label>
+                    <span>￥100000.00</span>
+                </p>
+                <p>
+                    <label for="send-addr">配送至：</label>
+                    <select name="send-addr" id="send-addr">
+                        <option value="">大连</option>
+                        <option value="">大连</option>
+                    </select>
+                </p>
+                <p class="num">
+                <label for="shop-num">购买数量</label>
+                <input type="text" name="shop-num" value="1" class="shop-num" id="shop-num">
+                <a href="#" id="add-num" class="add">+</a>
+                <a href="#" id="reduce-num" class="reduce">-</a>
+                </p>
+                <p>
+                    <input type="submit" value="加入购物车" class="btn-car" id="btn-car">
+                    <input type="submit" value="轻松购" class="btn-buy" id="btn-buy">
+                </p>
+            </form>
             </div>
         </section>
-        <section class="main clearfix">
-            <p>所有商品均为正品，价格已包含运费</p>
-
-           <!--  <div class="lf-main">
-               <ul>
-                   <li>
-                       <a href="#" class="lf-on"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-tw"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-th"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-fo"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-fi"></a>
-                   </li>
-               </ul>
-           </div>
-           <aside class="rt-main">
-               <ul>
-                   <li>
-                       <a href="#" class="rt-on"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-tw"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-th"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-fo"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-fi"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-si"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-se"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-ei"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-ni"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-te"></a>
-                   </li>
-               </ul>
-           </aside> -->
+        <section>
+            <p>
+                <a href="#" id="btn-shop">商品详情</a>
+            </p>
+            <div id="show-detail" class="show-detail">
+                <ul class="clearfix">
+                    <li><img src="../Public/images/buyers/de3.jpg" alt="详情图片1"></li>
+                    <li><img src="../Public/images/buyers/de4.jpg" alt="详情图片2"></li>
+                    <li><img src="../Public/images/buyers/de5.jpg" alt="详情图片1"></li>
+                    <li><img src="../Public/images/buyers/de6.jpg" alt="详情图片2"></li>
+                    <li><img src="../Public/images/buyers/de7.jpg" alt="详情图片1"></li>
+                </ul>
+            </div>
         </section>
     </article>
     <footer>
@@ -246,12 +231,8 @@
                 <li>关于我们</li>
                 <li>联系我们</li>
                 <li>给予反馈</li>
-                <li>
-                    <a href="">卖家登陆</a>
-                </li>
-                <li>
-                    <a href="./Admin/index.html">后台登陆</a>
-                </li>
+                <li><a href="">卖家登陆</a></li>
+                <li><a href="">后台登陆</a></li>
             </ul>
             <ul>
                 <li>facebook</li>
@@ -275,13 +256,11 @@
                 <label for="password">密&nbsp;码</label>
                 <input type="password" required></p>
             <p>
-                <a href="./Buyers/regeister.html">没有注册？</a>
+                <a href="regeister.html">没有注册？</a>
                 <button id="sub-lg" class="sub-lg">登陆</button>
             </p>
         </form>
     </div>
-    <script src="./Public/js/buyers/buy-main.js"></script>
-    <script src="./Public/js/buyers/buy-turn.js"></script>
-    <script>glideImage();</script>
+    <script src="../Public/js/buyers/buy-main.js"></script>
 </body>
 </html>

@@ -2,12 +2,12 @@
 <html lang="zh-cn">
 <head>
     <meta charset="utf-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="./Public/css/buyers/global.css">
-    <link rel="stylesheet" href="./Public/css/buyers/index.css">
-    <script src="./Public/js/src/jquery.1.4.2-min.js"></script>
-    <script src="./Public/js/src/html5.js"></script>
-    <script src="./Public/js/src/selectvizr.js"></script>
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../Public/css/buyers/global.css">
+    <link rel="stylesheet" href="../Public/css/buyers/order.css">
+    <script src="../Public/js/src/jquery.1.4.2-min.js"></script>
+    <script src="../Public/js/src/html5.js"></script>
+    <script src="../Public/js/src/selectvizr.js"></script>
 </head>
 <body>
     <header class="user-msg">
@@ -144,144 +144,163 @@
     </header>
     <article>
         <nav class="sort clearfix">
-            <ul class="clearfix">
+            <ul>
                 <li>
-                    <a href="./Buyers/sort.html">卡西欧（CASIO）</a>
+                    <a href="#">卡西欧（CASIO）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">天梭（TISSOT）</a>
+                    <a href="#">天梭（TISSOT）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">浪琴（LONGINES）</a>
+                    <a href="#">浪琴（LONGINES）</a>
                 </li>
                 <li>
-                    <a href="./Buyers/sort.html">劳力士（ROLEX）</a>
+                    <a href="#">劳力士（ROLEX）</a>
                 </li>
-                <li class="triangle"> 
-                    <i class="tran"></i>
-                    <i class="rotate tran"></i>
+                <li id="more">
+                    <a href="#">更多>></a>
+                </li>
+                <li> <i class="tran"></i>
                     <a href="index.html" class="logo"></a>
                 </li>
             </ul>
         </nav>
-        <section class="carousel" id="containt">
-            <div id="img" class="img" style="left: 0px">
-                <img src="./Public/images/buyers/c2.jpg" alt="1" />
-                <img src="./Public/images/buyers/c1.jpg" alt="2" />
-                <img src="./Public/images/buyers/c3.jpg" alt="3" />
-                <img src="./Public/images/buyers/c4.jpg" alt="3" />
-                <img src="./Public/images/buyers/c5.jpg" alt="3" />
-            </div>
-            <span id="prev" class="prev">&lt;</span>
-            <span id="next" class="next">&gt;</span>
-            <div id="btn" class="btn">
-                <span class="button">1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>5</span>
-            </div>
-        </section>
-        <section class="main clearfix">
-            <p>所有商品均为正品，价格已包含运费</p>
-
-           <!--  <div class="lf-main">
-               <ul>
-                   <li>
-                       <a href="#" class="lf-on"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-tw"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-th"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-fo"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="lf-fi"></a>
-                   </li>
-               </ul>
-           </div>
-           <aside class="rt-main">
-               <ul>
-                   <li>
-                       <a href="#" class="rt-on"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-tw"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-th"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-fo"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-fi"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-si"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-se"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-ei"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-ni"></a>
-                   </li>
-                   <li>
-                       <a href="#" class="rt-te"></a>
-                   </li>
-               </ul>
-           </aside> -->
-        </section>
-    </article>
-    <footer>
-        <div class="contact-us">
-            <ul>
-                <li>关于我们</li>
-                <li>联系我们</li>
-                <li>给予反馈</li>
+        <section class="clearfix">
+            <ul class="clearfix crumbs">
                 <li>
-                    <a href="">卖家登陆</a>
+                    <a href="index.html">手表</a>
+                    >
                 </li>
                 <li>
-                    <a href="./Admin/index.html">后台登陆</a>
+                    <a href="sort.html">劳力士</a>
+                    >
+                </li>
+                <li>
+                    <a href="detail.html">商品名</a>
+                    >
+                </li>
+                <li>
+                    <a href="review.html">我的订单</a>
                 </li>
             </ul>
-            <ul>
-                <li>facebook</li>
-                <li>sinaweibo</li>
-                <li>twitter</li>
-                <li>tecentweibo</li>
-                <li>qq</li>
-            </ul>
-        </div>
-        <p>&copy; 2004-2015 COMPUTERSHOPPING.COM</p>
-    </footer>
-    <div id="pop-login" class="pop-login">
-        <form action="">
-            <h2>
-                登陆 <i class="icon icon-cross" id="icon-cross"></i>
-            </h2>
-            <p>
-                <label for="username">用户名</label>
-                <input type="text" id="username" required></p>
-            <p>
-                <label for="password">密&nbsp;码</label>
-                <input type="password" required></p>
-            <p>
-                <a href="./Buyers/regeister.html">没有注册？</a>
-                <button id="sub-lg" class="sub-lg">登陆</button>
-            </p>
-        </form>
+            <section class="main">
+                <div class="main-wrap">
+                    <table>
+                        <tr>
+                            <th>宝贝</th>
+                            <th>单价(元)</th>
+                            <th>数量</th>
+                            <th>商品操作</th>
+                            <th>实付款</th>
+                            <th>交易操作</th>
+                        </tr>
+                        <tr>
+                            <td class="shop">
+                                <a href="#">
+                                    <img src="../Public/images/buyers/d-5.jpg" width="64px" height="64px"></a>
+                                <a href="detail.html" class="detail-sh">商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                            </td>
+                            <td>200.00</td>
+                            <td>3</td>
+                            <td>
+                                <a href="#">退款</a>
+                            </td>
+                            <td class="all">600.00</td>
+                            <td>
+                                <a href="">评价</a>
+                            </td>
+                        </tr>
+                        <tr class="sep-row"></tr>
+                        <tr>
+                            <td class="shop">
+                                <a href="#">
+                                    <img src="../Public/images/buyers/d-5.jpg" width="64px" height="64px"></a>
+                                <a href="detail.html" class="detail-sh">商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                            </td>
+                            <td>200.00</td>
+                            <td>3</td>
+                            <td>
+                                <a href="#">退款</a>
+                            </td>
+                            <td class="all">600.00</td>
+                            <td>
+                                <a href="">评价</a>
+                            </td>
+                        </tr>
+                        <tr class="sep-row"></tr>
+                        <tr>
+                            <td class="shop">
+                                <a href="#">
+                                    <img src="../Public/images/buyers/d-5.jpg" width="64px" height="64px"></a>
+                                <a href="detail.html" class="detail-sh">商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                            </td>
+                            <td>200.00</td>
+                            <td>3</td>
+                            <td>
+                                <a href="#">退款</a>
+                            </td>
+                            <td class="all">600.00</td>
+                            <td>
+                                <a href="">评价</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <aside class="as-nav">
+                <ul>
+                    <li>
+                        <a href="allorder.html"> <i class="icon icon-home3"></i>
+                            全部订单
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pay.html">
+                            <i class="icon icon-users"></i>
+                            待付款
+                        </a>
+                    </li>
+                    <li>
+                        <a href="deliver.html">
+                            <i class="icon icon-bubble"></i>
+                            待发货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="take.html">
+                            <i class="icon icon-address-book"></i>
+                            待收货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="review.html" class="cur-page">
+                            <i class="icon icon-address-book"></i>
+                            待评价
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+    </section>
+</article>
+<footer>
+    <div class="contact-us">
+        <ul>
+            <li>关于我们</li>
+            <li>联系我们</li>
+            <li>给予反馈</li>
+            <li>隐私权声明</li>
+            <li>合作方案</li>
+        </ul>
+        <ul>
+            <li>facebook</li>
+            <li>sinaweibo</li>
+            <li>twitter</li>
+            <li>tecentweibo</li>
+            <li>qq</li>
+        </ul>
     </div>
-    <script src="./Public/js/buyers/buy-main.js"></script>
-    <script src="./Public/js/buyers/buy-turn.js"></script>
-    <script>glideImage();</script>
+    <p>&copy; 2004-2015 COMPUTERSHOPPING.COM</p>
+</footer>
+<script src="../Public/js/buyers/buy-main.js"></script>
 </body>
 </html>

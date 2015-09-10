@@ -1,0 +1,130 @@
+body {
+    height: 100%;
+    position: relative;
+}
+a {
+    color: #666;
+}
+.car-detail li {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border: 1px solid #dcdcdc;
+    background-color: #fcfcfc;
+    color: #999;
+}
+.buy-num {
+    display: inline-block;
+    width: 150px;
+}
+.buy-whe {
+    width: 15px;
+    margin-right: 20px;
+}
+.tr-num {
+    width: 32px;
+    height: 18px;
+    text-align: center;
+}
+.car-g-de {
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+}
+.per-price {
+    margin: 0 50px 0 100px;
+    font-weight: 700;   
+    color: #333;
+}
+.all-price {
+    display: inline-block;
+    width: 65px;
+    font-weight: 900;
+    color: #c60000;
+}
+.car-del {
+    margin-left: 30px;
+}
+.car-del:hover {
+    text-decoration: underline;
+    color: #c60000;
+}
+.buy-num {
+    position: relative;
+}
+.reduce-num,
+.add-num {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.reduce-num {
+    left: -20px;
+}
+.add-num {
+}
+.car-all {
+    float: right;
+    margin-bottom: 30px;
+}
+.car-all strong {
+    display: inline-block;
+    width: 120px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #c60000;
+}
+.car-all input {
+    width: 100px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-weight: 800;
+    border: none;
+    background-color: #c60000;
+    color: #fff;
+    cursor: pointer;
+}
+.not-buy {
+    float: right;
+    margin-right: 20px;
+    color: green;
+}
+.crumbs a:hover {
+    color: #C60000;
+}
+.crumbs {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+.crumbs a {
+    color: #666;
+}
+.crumbs li {
+    float: left;
+}
+.sure-buy {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.3;
+    border: 1px solid red;
+}
+.pop-level{
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    display:none
+}
+.sure-form{width:310px;top:20%;left:50%;margin-left:-155px;padding:20px;background-color:#f5f9fc;display:none;position:absolute;top:20%}
